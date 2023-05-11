@@ -29,21 +29,23 @@
             android:id="@+id/botaoreserva"
             style="@style/edit_text_redondo"
             android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
             android:width="10dp"
             android:background="@drawable/iconreserva"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo" />
+            app:layout_constraintEnd_toStartOf="@+id/botaodespesa"
+            app:layout_constraintStart_toEndOf="@+id/botaoreceita"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <TextView
             android:id="@+id/txtdespesa"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginLeft="272dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal"
             android:text="Despesas"
             android:textColor="@color/cinzabotao"
@@ -60,71 +62,64 @@
             android:id="@+id/botaoreceita"
             style="@style/edit_text_redondo"
             android:layout_height="60dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginBottom="360dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="300dp"
             android:width="10dp"
             android:background="@drawable/iconreceita"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/botaoreserva"
-            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo" />
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            />
 
         <TextView
             android:id="@+id/txtreceita"
             android:layout_width="50dp"
             android:layout_height="20dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="272dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="260dp"
             android:orientation="horizontal"
             android:text="Receitas"
             android:textColor="@color/cinzabotao"
             android:textSize="13dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/botaodespesa"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@id/botaoreceita"
+
+
+            />
 
         <TextView
             android:id="@+id/txtreserva"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="85dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal"
             android:text="Reserva"
             android:textColor="@color/cinzabotao"
             android:textSize="13dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/txtdireitos"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/txtdespesa"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txtreceita"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/botaoreserva"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@id/botaoreserva" />
 
         <TextView
             android:id="@+id/botaodespesa"
             style="@style/edit_text_redondo"
             android:layout_height="60dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
             android:width="10dp"
             android:background="@drawable/icondespesa"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.934"
-            app:layout_constraintStart_toEndOf="@+id/botaoreserva"
-            app:layout_constraintTop_toBottomOf="@+id/logo"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <TextView
             android:id="@+id/txtdireitos"
@@ -138,8 +133,7 @@
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/btnConceitos"
