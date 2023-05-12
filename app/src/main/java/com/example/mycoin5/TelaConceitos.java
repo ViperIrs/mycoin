@@ -35,6 +35,13 @@ public class TelaConceitos extends AppCompatActivity {
                 startActivity(in);
             }
         });
+        btnDespesas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(TelaConceitos.this, TelaDespesas.class);
+                startActivity(in);
+            }
+        });
 
 
         logo.setOnClickListener(new View.OnClickListener() {
