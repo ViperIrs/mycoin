@@ -28,19 +28,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/TextReceita"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="A receita é todo tipo de dinheiro recebido em troca de produtos ou serviços, ou seja, é o dinheiro, ou salário, ou retirada que você ganha para executar uma determinada função, atividade ou comercializar algum produto para outra pessoa, seja ela física ou jurídica.   No entanto, nem toda entrada de dinheiro é classificada como receita. A aquisição de empréstimos e consignados é um exemplo claro de entrada, mas que não foi obtida em troca da prestação de serviços ou venda de produtos. Além disso, será preciso pagar com juros o valor emprestado, o que torna essa ação um exemplo de despesa.   Os rendimentos obtidos com as aplicações financeiras, poupança e investimentos também devem ser receita, bem como rendas de aluguéis, já que eles representam um aumento do seu patrimônio mediante uma atividade específica.   Outras receitas, como acordos judiciais, pensões alimentícias, e outros processos, também são considerados. "
-        android:textColor="@color/cinzabotao"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/TextReceita"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            android:text="A receita é todo tipo de dinheiro recebido em troca de produtos ou serviços, ou seja, é o dinheiro, ou salário, ou retirada que você ganha para executar uma determinada função, atividade ou comercializar algum produto para outra pessoa, seja ela física ou jurídica.   No entanto, nem toda entrada de dinheiro é classificada como receita. A aquisição de empréstimos e consignados é um exemplo claro de entrada, mas que não foi obtida em troca da prestação de serviços ou venda de produtos. Além disso, será preciso pagar com juros o valor emprestado, o que torna essa ação um exemplo de despesa.   Os rendimentos obtidos com as aplicações financeiras, poupança e investimentos também devem ser receita, bem como rendas de aluguéis, já que eles representam um aumento do seu patrimônio mediante uma atividade específica.   Outras receitas, como acordos judiciais, pensões alimentícias, e outros processos, também são considerados. "
+            android:textAlignment="center"
+            android:textColor="@color/cinzabotao"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="match_parent"
@@ -48,11 +49,12 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:text="Principais exemplos de fontes de receita: comercialização de produtos para pessoas e/ou empresas; prestação de serviços para terceiros; salário ou retirada mensal; rendimento de aplicações e investimentos em geral; rendimentos de poupança; receitas de aluguel; outras receitas; "
+            android:textAlignment="center"
             android:textColor="@color/cinzabotao"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
