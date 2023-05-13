@@ -24,7 +24,6 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="70dp"
         android:text="As despesas variáveis oscilam e mudam conforme a frequência e intensidade do consumo. Em resumo, quando o custo da despesa depende do nosso consumo, ela é variável. Por serem mais difíceis de prever, é preciso ter atenção redobrada com esses gastos. Porém, vale ressaltar que, com um pouco de organização, é possível fazer uma média do valor a ser pago mensalmente com base nos gastos dos meses anteriores. Em outras palavras, você pode ter uma previsão do valor dessas despesas. "
         android:textAlignment="center"

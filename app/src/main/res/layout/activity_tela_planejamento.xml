@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPlanejamento">
+
+
+    <TextView
+        android:id="@+id/TextOqé"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Por que é importante entender suas receitas e despesas?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Planejar sua vida financeira é essencial para evitar dívidas e permitir conquistas importantes, como comprar uma casa, carro ou aumentar o patrimônio. É preciso mapear suas fontes de renda, conhecer todos os seus gastos e garantir que os valores de entrada superam os valores de saída.
+
+Para organizar o orçamento doméstico, é recomendado utilizar uma planilha ou aplicativo de acompanhamento de ganhos e gastos. Ao observar com clareza como seu dinheiro está sendo gasto, é possível cortar despesas desnecessárias e estabelecer importantes metas de economia.
+
+Dessa forma, você se prepara para realizar sonhos. De uma viagem internacional a comprar um carro novo, sabendo qual o saldo positivo, temos uma projeção ideal de quanto tempo levará para juntar o valor total para concluir seus objetivos. "
+        android:textAlignment="center"
+        android:textColor="@color/cinzabotao"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

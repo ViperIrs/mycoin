@@ -2,16 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaDespesasFixas">
+    android:background="@drawable/background"
+    tools:context=".TelaOrcamento">
+
     <TextView
         android:id="@+id/TextOqé"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="O que são despesas fixas?"
+        android:text="Orçamento doméstico"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -23,8 +24,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Basicamente, despesas fixas são aquelas que se repetem todo mês no seu orçamento ou então que variam muito pouco. São aquelas contas que já sabemos o valor. Entra mês, sai mês e elas estão lá. Em geral, elas não costumam causar surpresas. Ou seja, o valor cobrado será o mesmo todo mês, salvo o período de reajustes pela lei. "
+        android:layout_marginTop="50dp"
+        android:text="Organizar o orçamento doméstico pode ajudar sua família a juntar dinheiro e realizar sonhos! Mudar os hábitos é essencial para alcançar objetivos. 
+
+No dia a dia familiar, é comum bagunçar o orçamento. Não saber exatamente quanto ganham, quanto e no que gastaram. Organizar tudo isso faz toda a diferença.   "
         android:textAlignment="center"
         android:textColor="@color/cinzabotao"
         android:textSize="18dp"
@@ -37,8 +40,8 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text="Como vimos, as despesas fixas são aquelas que não variam mês a mês, tais como: "
+        android:layout_margin="15dp"
+        android:text="O que é orçamento doméstico? "
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -51,8 +54,16 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text="Aluguel e condomínio; Água, Luz, gás Plano de TV, internet e celular; Plano de saúde e plano odontológico; Prestações de empréstimos e financiamentos; Seguros (imóvel, veículo, celular etc.); Serviços por assinatura (Netflix, Spotify, Disney+, etc.); Serviço de limpeza e lavanderia; Impostos fixos (ex.: guia mensal do MEI e IPTU); Mensalidade da faculdade, academia, curso, etc.; Clubes de assinatura (livros, vinhos, roupas, etc.); Mensalidades de serviços profissionais (professor particular, psicólogo, contador, etc.). "
+        android:layout_margin="15dp"
+        android:text="Orçamento doméstico é um método de planejamento e organização financeira que analisa todas as receitas e despesas da família. Os ganhos, dinheiro que entra, e despesas, dinheiro que é gasto. 
+
+Isso pode ser feito através de ferramentas de controle, como planilhas ou aplicativos de controle de finanças. Ou ainda o velho caderno.
+
+Com o orçamento doméstico é possível analisar no que a família está gastando, o que pode ser cortado e o que é essencial.
+
+Também é possível ter mais segurança financeira, criar uma reserva de emergência e começar a investir.Um orçamento doméstico bem-feito, traz a tranquilidade financeira que a família precisa, além de proporcionar conforto no futuro.
+
+Você passa a consumir de forma consciente, junta dinheiro e investe no futuro.  "
         android:textAlignment="center"
         android:textColor="@color/cinzabotao"
         android:textSize="18dp"
@@ -60,6 +71,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/btnPassos"
+        style="@style/edit_text"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:onClick="TelaConceitos"
+        android:text="Passos de um orçamento doméstico"
+        android:textAlignment="center"
+        android:textColor="@color/cinzabotao"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

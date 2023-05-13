@@ -5,15 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".TelaDespesas">
-
+    tools:context=".TelaPassos">
 
     <TextView
         android:id="@+id/TextOqé"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="O que são despesas?"
+        android:layout_marginTop="15dp"
+        android:text="Passo 1 – Defina metas "
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -25,8 +24,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="As despesas podem ser encaradas como todo tipo de pagamento ou uso de recursos financeiros necessários para manutenção do patrimônio ou atividade em questão, um conceito também aplicável ao planejamento financeiro em diferentes posições.   Para o orçamento doméstico, despesas são os gastos obrigatórios para manter sua qualidade de vida, e estão classificadas em FIXAS e VARIÁVEIS. "
+        android:layout_marginTop="50dp"
+        android:text="É importante se organizar financeiramente e criar um orçamento doméstico, mas isso exige disciplina. Se você tem objetivos bem definidos, fica mais fácil.
+
+Estabeleça com sua família metas de curto, médio e longo prazo. O que vocês querem alcançar? Seja uma viagem, se aposentar bem ou ter mais liberdade financeira. 
+
+Enquanto vocês estiverem juntando dinheiro, lembrarem sempre porque estão fazendo isso. "
         android:textAlignment="center"
         android:textColor="@color/cinzabotao"
         android:textSize="18dp"
@@ -36,59 +39,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/btnDespesasFixas"
-        style="@style/edit_text"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="25dp"
-        android:onClick="TelaConceitos"
-        android:text="Despesas fixas"
-        android:textAlignment="center"
-        android:textColor="@color/cinzabotao"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/btnDespesasVariaveis"
-        style="@style/edit_text"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="25dp"
-        android:onClick="TelaConceitos"
-        android:text="Despesas variáveis"
-        android:textAlignment="center"
-        android:textColor="@color/cinzabotao"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDespesasFixas" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text=" Importância do controle de despesas pessoais"
+        android:layout_margin="15dp"
+        android:text="Passo 2 – Faça um controle financeiro "
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDespesasVariaveis" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text="Controlar as despesas fixas e variáveis é essencial para manter uma vida financeira saudável e atingir seus objetivos. Afinal, você precisa gastar menos do que ganha para conseguir poupar, investir e alcançar as metas que dependem do dinheiro, como comprar um imóvel, viajar ou fazer um curso. No entanto, a falta de educação financeira tem como consequência o descontrole em relação aos próprios gastos e problemas na gestão do dinheiro."
+        android:layout_marginTop="15dp"
+        android:text="Essa parte é a mais difícil, porque exige que você mude seus hábitos e organize sua vida financeira. 
+
+Anotar todas as entradas (salário, rendas extras, férias, décimo terceiro salário, participação nos lucros) e todas as saídas (escola, moradia, alimentação, lazer, combustível) exige disciplina.
+
+Sua renda mensal varia? Quais são as despesas fixas e as despesas variáveis?
+
+De volta, essa é a hora de analisar seus erros e acertos. Já junta algum dinheiro todo mês? Tem vários serviços de streaming que não usa? Ou seja, encontre pontos a serem corrigido no orçamento doméstico. "
         android:textAlignment="center"
         android:textColor="@color/cinzabotao"
         android:textSize="18dp"
@@ -97,6 +72,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Passo 3 – Poupar e investir "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Agora você já tem o controle de suas despesas e receitas, pode pensar em poupar e investir seu dinheiro. Afinal, dinheiro parado perde poder de compra. "
+        android:textAlignment="center"
+        android:textColor="@color/cinzabotao"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
 
