@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     TextView botaoreserva;
     TextView botaodespesa;
 
+    TextView txtdireitos;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         botaoreceita = findViewById(R.id.botaoreceita);
         botaoreserva = findViewById(R.id.botaoreserva);
         botaodespesa = findViewById(R.id.botaodespesa);
+        txtdireitos = findViewById(R.id.txtdireitos);
 
         botaoreceita.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent in = new Intent(MainActivity.this, TelaConceitos.class);
+                startActivity(in);
+            }
+        });
+
+        txtdireitos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent in = new Intent(MainActivity.this, TelaCreditos.class);
                 startActivity(in);
             }
         });
