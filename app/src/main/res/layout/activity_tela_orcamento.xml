@@ -70,24 +70,24 @@ Você passa a consumir de forma consciente, junta dinheiro e investe no futuro. 
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"/>
 
     <TextView
         android:id="@+id/btnPassos"
         style="@style/edit_text"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
         android:onClick="TelaConceitos"
-        android:text="Passos de um orçamento doméstico"
+        android:text="Passos de um orçamento"
         android:textAlignment="center"
         android:textColor="@color/cinzabotao"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"/>
 
 
 

@@ -4,6 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculadoraReceitas">
+    tools:context=".CalculadoraReceitas"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/btnReceitas"
+        style="@style/boxcontent"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,63 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:background="@drawable/background"
     tools:context=".TelaReceitas">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/iconreceita"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
     <TextView
-        android:id="@+id/TextOqé"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="120dp"
-        android:text="O que é receita?"
+        android:id="@+id/txtreceita"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:text="O QUE É RECEITA?"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:background="@drawable/titulotxt"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-
-        <TextView
-            android:id="@+id/TextReceita"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginRight="10dp"
-            android:text="A receita é todo tipo de dinheiro recebido em troca de produtos ou serviços, ou seja, é o dinheiro, ou salário, ou retirada que você ganha para executar uma determinada função, atividade ou comercializar algum produto para outra pessoa, seja ela física ou jurídica.   No entanto, nem toda entrada de dinheiro é classificada como receita. A aquisição de empréstimos e consignados é um exemplo claro de entrada, mas que não foi obtida em troca da prestação de serviços ou venda de produtos. Além disso, será preciso pagar com juros o valor emprestado, o que torna essa ação um exemplo de despesa.   Os rendimentos obtidos com as aplicações financeiras, poupança e investimentos também devem ser receita, bem como rendas de aluguéis, já que eles representam um aumento do seu patrimônio mediante uma atividade específica.   Outras receitas, como acordos judiciais, pensões alimentícias, e outros processos, também são considerados. "
-            android:textAlignment="center"
-            android:textColor="@color/cinzabotao"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtreceita"
+        >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Principais exemplos de fontes de receita: comercialização de produtos para pessoas e/ou empresas; prestação de serviços para terceiros; salário ou retirada mensal; rendimento de aplicações e investimentos em geral; rendimentos de poupança; receitas de aluguel; outras receitas; "
-            android:textAlignment="center"
-            android:textColor="@color/cinzabotao"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="A receita é todo tipo de dinheiro recebido em troca de produtos ou serviços, ou seja, é o dinheiro, ou salário, ou retirada que você ganha para executar uma determinada função, atividade ou comercializar algum produto para outra pessoa, seja ela física ou jurídica.   No entanto, nem toda entrada de dinheiro é classificada como receita. A aquisição de empréstimos e consignados é um exemplo claro de entrada, mas que não foi obtida em troca da prestação de serviços ou venda de produtos. Além disso, será preciso pagar com juros o valor emprestado, o que torna essa ação um exemplo de despesa.   Os rendimentos obtidos com as aplicações financeiras, poupança e investimentos também devem ser receita, bem como rendas de aluguéis, já que eles representam um aumento do seu patrimônio mediante uma atividade específica.   Outras receitas, como acordos judiciais, pensões alimentícias, e outros processos, também são considerados."
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:gravity="center"
+            />
 
-    </LinearLayout>
-
-
-
-</ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
