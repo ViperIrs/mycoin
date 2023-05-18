@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background"
     tools:context=".TelaReceitas">
-
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/iconreceita"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/iconreceita"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
-    <TextView
-        android:id="@+id/txtreceita"
-        android:layout_width="360dp"
-        android:layout_height="40dp"
-        android:text="O QUE É RECEITA?"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:background="@drawable/titulotxt"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/txtreceita"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/titulotxt"
+            android:gravity="center"
+            android:text="O QUE É RECEITA?"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
 
-    <TextView
-        android:id="@+id/cardview"
-        android:layout_width="360dp"
-        android:layout_height="450dp"
-        android:background="@drawable/cardview"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtreceita"/>
+        <TextView
+            android:id="@+id/cardview"
+            android:layout_width="360dp"
+            android:layout_height="450dp"
+            android:background="@drawable/cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtreceita" />
 
         <TextView
             android:id="@+id/textreceita"
@@ -54,5 +58,35 @@
             app:layout_constraintStart_toStartOf="@id/cardview"
             app:layout_constraintEnd_toEndOf="@id/cardview"
             />
+        <TextView
+            android:id="@+id/txtexemplos"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:text="PRINCIPAIS EXEMPLOS DE FONTES DE RECEITA"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/titulotxt"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/cardview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/cardview2"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:padding="16dp"
+            android:text="Comercialização de produtos para pessoas e/ou empresas; prestação de serviços para terceiros; salário ou retirada mensal; rendimento de aplicações e investimentos em geral; rendimentos de poupança;receitas de aluguel; outras receitas; "
+            android:background="@drawable/cardview"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

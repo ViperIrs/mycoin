@@ -50,13 +50,6 @@
                 android:layout_marginLeft="30dp"
                 />
 
-            <TextView
-                android:id="@+id/GetD"
-                android:background="@drawable/boxcontent"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginLeft="30dp"
-                />
 
 
         </LinearLayout>

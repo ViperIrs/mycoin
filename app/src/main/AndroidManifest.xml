@@ -18,9 +18,6 @@
             android:name=".CalculadoraDespesas"
             android:exported="false" />
         <activity
-            android:name=".CalculadoraDespesas]"
-            android:exported="false" />
-        <activity
             android:name=".TelaCreditos"
             android:exported="false" />
         <activity
