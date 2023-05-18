@@ -36,6 +36,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        botaodespesa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(MainActivity.this, CalculadoraDespesas.class);
+                startActivity(in);
+            }
+        });
+
+        botaoreserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(MainActivity.this, CalculadoraReserva.class);
+                startActivity(in);
+            }
+        });
+
         btnConceitos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
