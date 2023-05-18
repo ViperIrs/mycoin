@@ -31,25 +31,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <androidx.cardview.widget.CardView
+    <TextView
+        android:id="@+id/cardview"
         android:layout_width="360dp"
         android:layout_height="450dp"
-        app:cardCornerRadius="20dp"
+        android:background="@drawable/cardview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtreceita"
-        >
+        app:layout_constraintTop_toBottomOf="@id/txtreceita"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/textreceita"
+            android:layout_width="350dp"
+            android:layout_height="430dp"
             android:padding="16dp"
             android:text="A receita é todo tipo de dinheiro recebido em troca de produtos ou serviços, ou seja, é o dinheiro, ou salário, ou retirada que você ganha para executar uma determinada função, atividade ou comercializar algum produto para outra pessoa, seja ela física ou jurídica.   No entanto, nem toda entrada de dinheiro é classificada como receita. A aquisição de empréstimos e consignados é um exemplo claro de entrada, mas que não foi obtida em troca da prestação de serviços ou venda de produtos. Além disso, será preciso pagar com juros o valor emprestado, o que torna essa ação um exemplo de despesa.   Os rendimentos obtidos com as aplicações financeiras, poupança e investimentos também devem ser receita, bem como rendas de aluguéis, já que eles representam um aumento do seu patrimônio mediante uma atividade específica.   Outras receitas, como acordos judiciais, pensões alimentícias, e outros processos, também são considerados."
             android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:justificationMode="inter_word"
+            android:textSize="15sp"
+            android:textStyle="bold"
             android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/cardview"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
             />
 
-    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
