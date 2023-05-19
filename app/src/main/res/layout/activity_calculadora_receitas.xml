@@ -8,15 +8,26 @@
     android:background="@drawable/background"
     >
 
-    <TextView
-        android:id="@+id/btnReceitas"
+    <ImageView
+        android:id="@+id/viewreceitas"
         style="@style/boxcontent"
-        android:textColor="@color/white"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        />
 
-         />
+    <ImageView
+        android:id="@+id/imgbanco"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/money"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/viewreceitas"
+        app:layout_constraintEnd_toEndOf="@id/viewreceitas"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceitas"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

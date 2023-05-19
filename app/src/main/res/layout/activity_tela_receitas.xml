@@ -57,6 +57,7 @@
             app:layout_constraintTop_toTopOf="@id/cardview"
             app:layout_constraintStart_toStartOf="@id/cardview"
             app:layout_constraintEnd_toEndOf="@id/cardview"
+            app:layout_constraintBottom_toBottomOf="@id/cardview"
             />
         <TextView
             android:id="@+id/txtexemplos"
@@ -75,17 +76,19 @@
 
         <TextView
             android:id="@+id/cardview2"
-            android:layout_width="350dp"
+            android:layout_width="360dp"
             android:layout_height="150dp"
+            android:background="@drawable/cardview"
+            android:gravity="center"
             android:padding="16dp"
             android:text="Comercialização de produtos para pessoas e/ou empresas; prestação de serviços para terceiros; salário ou retirada mensal; rendimento de aplicações e investimentos em geral; rendimentos de poupança;receitas de aluguel; outras receitas; "
-            android:background="@drawable/cardview"
-            android:textStyle="bold"
-            android:gravity="center"
             android:textColor="@android:color/black"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtexemplos"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
