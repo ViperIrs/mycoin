@@ -8,14 +8,26 @@
     android:background="@drawable/background"
     >
 
-    <TextView
+    <ImageView
         android:id="@+id/viewreserva"
         style="@style/boxcontent"
-        android:textColor="@color/white"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="R$ 0.000"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="@id/viewreserva"
+        app:layout_constraintStart_toStartOf="@id/viewreserva"
+        app:layout_constraintBottom_toBottomOf="@id/viewreserva"
         />
 
     <HorizontalScrollView
@@ -35,14 +47,15 @@
             android:orientation="horizontal">
 
 
-        <TextView
+        <ImageView
             android:id="@+id/GetReceitas"
             android:background="@drawable/boxcontent"
             android:layout_width="300dp"
             android:layout_height="250dp"
+            android:layout_marginLeft="15dp"
              />
 
-            <TextView
+            <ImageView
                 android:id="@+id/GetDespesas"
                 android:background="@drawable/boxcontent"
                 android:layout_width="300dp"
