@@ -4,6 +4,7 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF009688</color>
     <color name="bankcolor">#00695C</color>
     <color name="green">#4CAF50</color>
     <color name="black">#FF000000</color>
@@ -17,6 +18,7 @@
     <color name="cinza_claro">#373737</color>
     <color name="cinza_mais_claro">#3C3C3C</color>
     <color name="azulmarinho">#171819</color>
+    <color name="azulmarinho2">#202124</color>
     <color name="cinzabotao">#666666</color>
 
 

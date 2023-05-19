@@ -2,28 +2,31 @@ package com.example.mycoin5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView btnConceitos;
-    TextView botaoreceita;
-    TextView botaoreserva;
-    TextView botaodespesa;
+    ImageView btnConceitos;
+    ImageView botaoreceita;
+    ImageView botaoreserva;
+    ImageView botaodespesa;
 
     TextView txtdireitos;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        btnConceitos = findViewById(R.id.btnReceitas);
+        btnConceitos = findViewById(R.id.btnConceitos);
         botaoreceita = findViewById(R.id.botaoreceita);
         botaoreserva = findViewById(R.id.botaoreserva);
         botaodespesa = findViewById(R.id.botaodespesa);

@@ -15,102 +15,149 @@
         tools:context=".TelaPrincipal">
 
         <ImageView
+            android:id="@+id/textcontentlogo"
+            android:layout_width="390dp"
+            android:layout_height="250dp"
+            style="@style/boxcontent"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
             android:id="@+id/logo"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="230dp"
             android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/textcontentlogo"
+            app:layout_constraintTop_toTopOf="@id/textcontentlogo"
+            />
+
+        <ImageView
+            android:id="@+id/textcontent"
+            android:layout_width="390dp"
+            android:layout_height="400dp"
+            style="@style/boxcontent"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/btnDespesas"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="290dp"
+            android:onClick="TelaDespesas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:srcCompat="@drawable/despesas"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/texticon"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="DESPESAS"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/btnReceitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/btnReceitas"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/money"
+            android:onClick="TelaReceitas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:layout_marginBottom="290dp"
+            android:layout_marginRight="50dp"
+            />
+
+        <TextView
+            android:id="@+id/texticon2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="RECEITAS"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/btnReceitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/btnOrcamento"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="100dp"
+            android:onClick="TelaOrcamento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texticon"
+            app:srcCompat="@drawable/orcamento"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/texticon3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="ORÇAMENTO"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/btnOrcamento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="190dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/btnPlanejamento"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="100dp"
+            android:onClick="TelaPlanejamento"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texticon2"
+            app:srcCompat="@drawable/planejamento"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/texticon4"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="PLANEJAMENTO"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/btnPlanejamento"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <LinearLayout
-            android:layout_width="410dp"
-            android:layout_height="408dp"
-
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="1dp"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/logo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-            <TextView
-                android:id="@+id/btnPlanejamento"
-                style="@style/edit_text"
-                android:layout_width="232dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                android:text="Planejamento Financeiro"
-                android:textAlignment="center"
-                android:textColor="@color/cinzabotao"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtdireitos"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtreserva"
-                app:layout_constraintVertical_bias="0.293" />
-
-            <TextView
-                android:id="@+id/btnReceitas"
-                style="@style/edit_text"
-                android:layout_width="232dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                android:text="Receita"
-                android:textAlignment="center"
-                android:textColor="@color/cinzabotao"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtdireitos"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtreserva"
-                app:layout_constraintVertical_bias="0.293" />
-
-            <TextView
-                android:id="@+id/btnDespesas"
-                style="@style/edit_text"
-                android:layout_width="232dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                android:text="Despesas"
-                android:textAlignment="center"
-                android:textColor="@color/cinzabotao"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtdireitos"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtreserva"
-                />
-
-            <TextView
-                android:id="@+id/btnOrcamento"
-                style="@style/edit_text"
-                android:layout_width="232dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                android:text="Orçamento"
-                android:textAlignment="center"
-                android:textColor="@color/cinzabotao"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtdireitos"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtreserva"
-                app:layout_constraintVertical_bias="0.293" />
-
-        </LinearLayout>
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="5dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
