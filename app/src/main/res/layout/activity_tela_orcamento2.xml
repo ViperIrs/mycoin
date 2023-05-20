@@ -52,32 +52,30 @@
             android:id="@+id/textreceita"
             android:layout_width="350dp"
             android:layout_height="120dp"
+            android:gravity="center"
             android:padding="16dp"
             android:text="Organizar o orçamento doméstico pode ajudar sua família a juntar dinheiro e realizar sonhos!"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa"
-            app:layout_constraintStart_toStartOf="@id/cardview"
             app:layout_constraintEnd_toEndOf="@id/cardview"
-            />
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
 
         <TextView
             android:id="@+id/textreceita2"
             android:layout_width="350dp"
-            android:layout_height="100dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
             android:padding="16dp"
             android:text="Mudar os hábitos é essencial para alcançar objetivos.  No dia a dia familiar, é comum bagunçar o orçamento. Não saber exatamente quanto ganham, quanto e no que gastaram. Organizar tudo isso faz toda a diferença.   "
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="50dp"
             app:layout_constraintBottom_toBottomOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview"
             app:layout_constraintEnd_toEndOf="@id/cardview"
-            />
+            app:layout_constraintStart_toStartOf="@id/cardview" />
 
         <TextView
             android:id="@+id/titleorçamentos2"
