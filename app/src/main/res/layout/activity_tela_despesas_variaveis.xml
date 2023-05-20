@@ -69,14 +69,14 @@
         <TextView
             android:id="@+id/textexemplos"
             style="@style/testebotao"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="55dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="25dp"
-            android:text="EXEMPLOS DE DESPESA VARIÁVEL"
+            android:text="EXEMPLOS"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/cardview"
             app:layout_constraintStart_toStartOf="parent"
@@ -302,7 +302,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Plano Odontológico"
+                            android:text="- Transporte público"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -312,7 +312,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Plano de saúde"
+                            android:text="- Concerto de veículos"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -322,7 +322,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Academia"
+                            android:text="- Combustível do carro"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -332,7 +332,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Suplementos alimentares"
+                            android:text="- Estacionamento"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -343,7 +343,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="- Medicamentos perscritos"
+                            android:text="- Uber"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -351,7 +351,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/saude"
+                            android:src="@drawable/carro"
                             android:layout_marginLeft="180dp"
                             android:layout_marginBottom="10dp"
                             />
@@ -387,7 +387,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Prestações de empréstimos"
+                            android:text="- Produtos para pet"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -397,7 +397,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Seguros"
+                            android:text="- Serviços de beleza"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -407,7 +407,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Mensalidade da faculdade"
+                            android:text="- Vestuário em geral"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -417,7 +417,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="- Cursos"
+                            android:text="- Presentes"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -428,7 +428,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="- Financiamentos"
+                            android:text="- Jogos e apostas"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -436,7 +436,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/seguros"
+                            android:src="@drawable/cassino"
                             android:layout_marginLeft="180dp"
                             android:layout_marginBottom="10dp"
                             />
