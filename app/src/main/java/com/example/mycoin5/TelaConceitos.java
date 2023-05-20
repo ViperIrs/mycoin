@@ -1,6 +1,6 @@
 package com.example.mycoin5;
 
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -12,10 +12,10 @@ import java.util.Objects;
 public class TelaConceitos extends AppCompatActivity {
     ImageView btnReceitas;
     ImageView btnDespesas;
-    ImageView btnOrca;
+    ImageView btnOrcamento;
     ImageView btnPlanejamento;
 
-    @SuppressLint("MissingInflatedId")
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class TelaConceitos extends AppCompatActivity {
         ImageView logo = findViewById(R.id.logo);
         btnReceitas = findViewById(R.id.btnReceitas);
         btnDespesas = findViewById(R.id.btnDespesas);
-        btnOrca = findViewById(R.id.btnOrca);
+        btnOrcamento = findViewById(R.id.btnOrcamento);
         btnPlanejamento = findViewById(R.id.btnPlanejamento);
 
         btnDespesas.setOnClickListener(view -> {
@@ -48,7 +48,7 @@ public class TelaConceitos extends AppCompatActivity {
             startActivity(in);
         });
 
-        btnOrca.setOnClickListener(view -> {
+        btnOrcamento.setOnClickListener(view -> {
             Intent in = new Intent(TelaConceitos.this, TelaOrcamento.class);
             startActivity(in);
         });

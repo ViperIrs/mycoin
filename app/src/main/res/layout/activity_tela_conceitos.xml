@@ -79,6 +79,7 @@
             app:layout_constraintTop_toBottomOf="@id/logo"
             android:layout_marginBottom="290dp"
             android:layout_marginRight="50dp"
+            tools:ignore="SpeakableTextPresentCheck"
             />
 
         <TextView
@@ -97,7 +98,7 @@
             android:layout_marginTop="5dp"/>
 
         <ImageView
-            android:id="@+id/btnOrca"
+            android:id="@+id/btnOrcamento"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginLeft="50dp"
@@ -118,7 +119,7 @@
             android:textSize="19sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/btnOrca"
+            app:layout_constraintTop_toBottomOf="@id/btnOrcamento"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginRight="190dp"
