@@ -11,8 +11,8 @@ import java.util.Objects;
 
 public class TelaConceitos extends AppCompatActivity {
     ImageView btnReceitas;
-    ImageView btnDespesas;
     ImageView btnOrcamento;
+    ImageView btnDespesas;
     ImageView btnPlanejamento;
 
  
@@ -23,9 +23,9 @@ public class TelaConceitos extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         ImageView logo = findViewById(R.id.logo);
+        btnOrcamento = findViewById(R.id.btnOrcamento);
         btnReceitas = findViewById(R.id.btnReceitas);
         btnDespesas = findViewById(R.id.btnDespesas);
-        btnOrcamento = findViewById(R.id.btnOrcamento);
         btnPlanejamento = findViewById(R.id.btnPlanejamento);
 
         btnDespesas.setOnClickListener(view -> {
@@ -49,9 +49,10 @@ public class TelaConceitos extends AppCompatActivity {
         });
 
         btnOrcamento.setOnClickListener(view -> {
-            Intent in = new Intent(TelaConceitos.this, TelaOrcamento.class);
+            Intent in = new Intent(TelaConceitos.this, TelaOrcamento2.class);
             startActivity(in);
         });
+
 
     }
 }
