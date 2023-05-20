@@ -8,31 +8,6 @@
     android:background="@drawable/background"
     >
 
-    <TextView
-        android:id="@+id/viewDespesas"
-        style="@style/boxcontent"
-        android:textColor="@color/white"
-        android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
 
-    <TextView
-        android:id="@+id/btnPassos"
-        style="@style/edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="15dp"
-        android:onClick="TelaConceitos"
-        android:text="Passos de um orçamento"
-        android:textAlignment="center"
-        android:textColor="@color/cinzabotao"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewDespesas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

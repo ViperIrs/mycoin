@@ -1,65 +1,455 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaDespesasFixas">
-    <TextView
-        android:id="@+id/TextOqé"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="O que são despesas fixas?"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Basicamente, despesas fixas são aquelas que se repetem todo mês no seu orçamento ou então que variam muito pouco. São aquelas contas que já sabemos o valor. Entra mês, sai mês e elas estão lá. Em geral, elas não costumam causar surpresas. Ou seja, o valor cobrado será o mesmo todo mês, salvo o período de reajustes pela lei. "
-        android:textAlignment="center"
-        android:textColor="@color/cinzabotao"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text="Como vimos, as despesas fixas são aquelas que não variam mês a mês, tais como: "
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text="Aluguel e condomínio; Água, Luz, gás Plano de TV, internet e celular; Plano de saúde e plano odontológico; Prestações de empréstimos e financiamentos; Seguros (imóvel, veículo, celular etc.); Serviços por assinatura (Netflix, Spotify, Disney+, etc.); Serviço de limpeza e lavanderia; Impostos fixos (ex.: guia mensal do MEI e IPTU); Mensalidade da faculdade, academia, curso, etc.; Clubes de assinatura (livros, vinhos, roupas, etc.); Mensalidades de serviços profissionais (professor particular, psicólogo, contador, etc.). "
-        android:textAlignment="center"
-        android:textColor="@color/cinzabotao"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".TelaReceitas">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/casa"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/titleDespesaFixa"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/titulotxt"
+            android:gravity="center"
+            android:text="O QUE SÃO DESPESAS FIXAS?"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/cardview"
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:background="@drawable/cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
+
+        <TextView
+            android:id="@+id/textreceita"
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:padding="16dp"
+            android:text="Basicamente, despesas fixas são aquelas que se repetem todo mês no seu orçamento ou então que variam muito pouco. São aquelas contas que já sabemos o valor. Entra mês, sai mês e elas estão lá. Em geral, elas não costumam causar surpresas. Ou seja, o valor cobrado será o mesmo todo mês, salvo o período de reajustes pela lei."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa"
+            />
+
+        <TextView
+            android:id="@+id/textexemplos"
+            style="@style/testebotao"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"
+            android:text="EXEMPLOS DE DESPESA FIXA"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/cardview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textexemplos"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textexemplos"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="31dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titlecards1"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/titulotxt"
+                            android:gravity="center"
+                            android:text="DENTRO DE CASA"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Aluguel, condomínio"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Serviço de limpeza e lavanderia "
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Luz e gás"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Água"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="- Impostos fixos"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/despezafixa"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="31dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titlecard2"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/titulotxt"
+                            android:gravity="center"
+                            android:text="ASSINATURAS"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Serviços por assinatura (Netflix)"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Plano de TV, internet e celular"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Netflix"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Spotify"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="- Clubes de assinatura"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/streaming"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="31dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titlecards3"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/titulotxt"
+                            android:gravity="center"
+                            android:text="SAÚDE"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Plano Odontológico"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Plano de saúde"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Academia"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Suplementos alimentares"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="- Medicamentos perscritos"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/saude"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="31dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titlecards4"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/titulotxt"
+                            android:gravity="center"
+                            android:text="OUTROS"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Prestações de empréstimos"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Seguros"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Mensalidade da faculdade"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Cursos"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="- Financiamentos"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/seguros"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

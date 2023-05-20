@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/titleReceita"
+            android:id="@+id/titleDespesaFixa"
             android:layout_width="360dp"
             android:layout_height="57dp"
             android:background="@drawable/titulotxt"
@@ -47,7 +47,7 @@
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleReceita" />
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
 
         <TextView
             android:id="@+id/textplanejamento"
@@ -61,7 +61,7 @@
             android:gravity="center"
             app:layout_constraintStart_toStartOf="@id/cardview"
             app:layout_constraintEnd_toEndOf="@id/cardview"
-            app:layout_constraintTop_toBottomOf="@id/titleReceita"
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa"
             android:layout_marginBottom="130dp"
             />
 

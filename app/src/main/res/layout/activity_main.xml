@@ -16,14 +16,15 @@
 
         <ImageView
             android:id="@+id/textcontentlogo"
-            android:layout_width="390dp"
-            android:layout_height="710dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             style="@style/boxcontent"
             android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             />
 
         <ImageView
@@ -159,7 +160,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TextSizeCheck" />
+            tools:ignore="TextSizeCheck"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -15,37 +15,40 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
+            android:layout_height="130dp"
             app:srcCompat="@drawable/despesas"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="20dp"
             />
 
         <TextView
-            android:id="@+id/titleReceita"
-            android:layout_width="360dp"
+            android:id="@+id/titleDespesaFixa"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/titulotxt"
-            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:text="O QUE SÃO DESPESAS?"
             android:textColor="@color/white"
             android:textSize="20dp"
+            android:gravity="center"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imageView" />
+            app:layout_constraintTop_toBottomOf="@id/imageView"/>
 
         <TextView
             android:id="@+id/cardview"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleReceita" />
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
 
         <TextView
             android:id="@+id/txtdespesa"
@@ -111,19 +114,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnDespesasVariaveis"/>
 
-        <TextView
+        <ImageView
             android:id="@+id/cardview2"
             android:layout_width="360dp"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView3" />
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+            android:layout_marginBottom="20dp"
+            />
 
         <TextView
             android:id="@+id/textdespesas2"
             android:layout_width="350dp"
-            android:layout_height="250dp"
+            android:layout_height="240dp"
             android:padding="16dp"
             android:text="Controlar as despesas fixas e variáveis é essencial para manter uma vida financeira saudável e atingir seus objetivos. Afinal, você precisa gastar menos do que ganha para conseguir poupar, investir e alcançar as metas que dependem do dinheiro, como comprar um imóvel, viajar ou fazer um curso. No entanto, a falta de educação financeira tem como consequência o descontrole em relação aos próprios gastos e problemas na gestão do dinheiro."
             android:textColor="@android:color/black"
@@ -132,7 +137,8 @@
             android:gravity="center"
             app:layout_constraintTop_toTopOf="@id/cardview2"
             app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2" />
+            app:layout_constraintEnd_toEndOf="@id/cardview2"
+            />
 
 
 
