@@ -50,18 +50,18 @@ public class TelaConceitos extends AppCompatActivity {
             }
         });
 
-        btnOrcamento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(TelaConceitos.this, TelaOrcamento.class);
-                startActivity(in);
-            }
-        });
-
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(TelaConceitos.this, MainActivity.class);
+                startActivity(in);
+            }
+        });
+
+        btnOrcamento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(TelaConceitos.this, TelaOrcamento.class);
                 startActivity(in);
             }
         });
