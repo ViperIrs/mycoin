@@ -134,11 +134,13 @@
         android:layout_width="320dp"
         android:layout_height="270dp"
         android:layout_marginBottom="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleanteriores"
-        android:orientation="vertical">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -148,91 +150,83 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 1"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 2"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 3"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 4"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 5"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 6"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 7"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 8"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="TextView 9"
                 android:textColor="@color/red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 

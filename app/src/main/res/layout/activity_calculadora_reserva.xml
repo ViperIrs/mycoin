@@ -60,16 +60,18 @@
             android:background="@drawable/boxcontent"
             android:layout_width="300dp"
             android:layout_height="250dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_margin="20dp"/>
 
             <ImageView
                 android:id="@+id/GetDespesas"
                 android:background="@drawable/boxcontent"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_margin="20dp"
+                />
+
+
+
         </LinearLayout>
     </HorizontalScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
