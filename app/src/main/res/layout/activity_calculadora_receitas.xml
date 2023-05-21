@@ -31,6 +31,7 @@
 
 
     <TextView
+        android:id="@+id/TextViewReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 0.000"
@@ -57,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="ADICIONE SUA DESPESA"
+        android:text="ADICIONE SUA RECEITA"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -118,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="DESPESAS ANTERIORES"
+        android:text="RECEITAS ANTERIORES"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -156,7 +157,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 2"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -165,17 +166,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
-                android:textColor="@color/green"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_margin="10dp"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 3"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -185,7 +176,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 4"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -195,7 +186,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 5"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -205,7 +196,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 6"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -215,7 +206,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 7"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -225,7 +216,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView 1"
+                android:text="TextView 8"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 9"
                 android:textColor="@color/green"
                 android:textStyle="bold"
                 android:textSize="20sp"
