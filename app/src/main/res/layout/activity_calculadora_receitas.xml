@@ -9,25 +9,232 @@
     >
 
     <ImageView
-        android:id="@+id/viewreceitas"
+        android:id="@+id/viewreceita"
         style="@style/boxcontent"
-        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/imgbanco"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/money"
+        android:src="@drawable/money2"
         android:layout_marginRight="10dp"
-        app:layout_constraintTop_toTopOf="@id/viewreceitas"
-        app:layout_constraintEnd_toEndOf="@id/viewreceitas"
-        app:layout_constraintBottom_toBottomOf="@id/viewreceitas"
+        app:layout_constraintTop_toTopOf="@id/viewreceita"
+        app:layout_constraintEnd_toEndOf="@id/viewreceita"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceita"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0.000"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="@id/viewreceita"
+        app:layout_constraintStart_toStartOf="@id/viewreceita"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceita"/>
+
+    <ImageView
+        android:id="@+id/viewreceitas2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        style="@style/boxcontent"
+        app:layout_constraintTop_toBottomOf="@id/viewreceita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/titleReceita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ADICIONE SUA DESPESA"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="@id/viewreceitas2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <EditText
+        android:id="@+id/EditTextReceitas"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text"
+        android:hint="R$ 0,00"
+        android:textColorHint="@color/white"
+        android:paddingStart="10dp"
+        android:textSize="25sp"
+        android:maxLength="10"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text2"
+        android:text="ADICIONAR"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"/>
+
+
+    <ImageView
+        android:id="@+id/viewreceitas3"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_margin="20dp"
+        style="@style/boxcontent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewreceitas2"
+        />
+
+    <TextView
+        android:id="@+id/titleanteriores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DESPESAS ANTERIORES"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="@id/viewreceitas3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="320dp"
+        android:layout_height="270dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleanteriores"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 1"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
