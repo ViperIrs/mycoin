@@ -96,52 +96,100 @@
             app:layout_constraintStart_toStartOf="@id/cardview"
             app:layout_constraintBottom_toBottomOf="@id/cardview" />
 
-        <TextView
-            android:id="@+id/titleorçamentos2"
-            style="@style/testebotao"
-            android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="25dp"
-            android:text="EXEMPLOS"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="330dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="31dp"
             app:layout_constraintTop_toBottomOf="@id/cardview"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <ImageView
-            android:id="@+id/cardview2"
-            android:layout_width="360dp"
-            android:layout_height="160dp"
-            android:background="@drawable/cardview"
-            android:layout_marginBottom="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleorçamentos2"/>
+            >
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="330dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/titlecards1"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/titulotxt"
+                    android:gravity="center"
+                    android:text="EXEMPLOS"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
 
-        <TextView
-            android:id="@+id/textreceita5"
-            android:layout_width="350dp"
-            android:layout_height="150dp"
-            android:padding="16dp"
-            android:text="Comercialização de produtos para pessoas e/ou empresas; prestação de serviços para terceiros; salário ou retirada mensal; rendimento de aplicações e investimentos em geral; rendimentos de poupança;receitas de aluguel; outras receitas"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintTop_toBottomOf="@id/titleorçamentos2"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
-            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- rendimento de aplicações e investimentos em geral; "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- salário ou retirada mensal; "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- comercialização de produtos para pessoas e/ou empresas; comercialização de produtos para pessoas e/ou empresas; "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- prestação de serviços para terceiros; "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- rendimentos de poupança; "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- receitas de aluguel;  "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- outras receitas;  "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
 
 
 
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
