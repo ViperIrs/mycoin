@@ -36,7 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 0.000"
-        android:textStyle="bold"
         android:textColor="@color/red"
         android:textSize="40sp"
         android:layout_marginLeft="15dp"
@@ -79,7 +78,6 @@
         android:paddingStart="10dp"
         android:textSize="25sp"
         android:maxLength="10"
-        android:textStyle="bold"
         android:inputType="numberDecimal"
         android:layout_marginBottom="40dp"
         android:layout_marginRight="140dp"
@@ -154,7 +152,7 @@
                 android:text="TextView 1"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -163,7 +161,7 @@
                 android:text="TextView 2"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -172,7 +170,7 @@
                 android:text="TextView 3"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -181,7 +179,7 @@
                 android:text="TextView 4"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -190,7 +188,7 @@
                 android:text="TextView 5"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -199,7 +197,7 @@
                 android:text="TextView 6"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -208,7 +206,7 @@
                 android:text="TextView 7"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -217,7 +215,7 @@
                 android:text="TextView 8"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -226,7 +224,7 @@
                 android:text="TextView 9"
                 android:textColor="@color/red"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
         </LinearLayout>
 

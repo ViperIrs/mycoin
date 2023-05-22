@@ -20,7 +20,7 @@ public class CalculadoraDespesas extends AppCompatActivity {
         edittext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edittext.setHint("");
+                edittext.setHint(null);
             }
         });
     }
