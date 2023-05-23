@@ -34,7 +34,7 @@
             android:text="POR QUE É IMPORTANTE ENTENDER SUAS RECEITAS E DESPESAS?"
             android:textColor="@color/white"
             android:layout_marginTop="15dp"
-            android:textSize="20dp"
+            android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,12 +47,14 @@
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
         <TextView
             android:id="@+id/textplanejamento"
             android:layout_width="350dp"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="Planejar sua vida financeira é essencial para evitar dívidas e permitir conquistas importantes, como comprar uma casa, carro ou aumentar o patrimônio. É preciso mapear suas fontes de renda, conhecer todos os seus gastos e garantir que os valores de entrada superam os valores de saída."
             android:textColor="@android:color/black"
@@ -68,7 +70,7 @@
         <TextView
             android:id="@+id/textplanejamento2"
             android:layout_width="350dp"
-            android:layout_height="161dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="Para organizar o orçamento doméstico, é recomendado utilizar uma planilha ou aplicativo de acompanhamento de ganhos e gastos. Ao observar com clareza como seu dinheiro está sendo gasto, é possível cortar despesas desnecessárias e estabelecer importantes metas de economia."
             android:textColor="@android:color/black"
@@ -84,7 +86,7 @@
         <TextView
             android:id="@+id/textplanejamento3"
             android:layout_width="350dp"
-            android:layout_height="164dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="Dessa forma, você se prepara para realizar sonhos. De uma viagem internacional a comprar um carro novo, sabendo qual o saldo positivo, temos uma projeção ideal de quanto tempo levará para juntar o valor total para concluir seus objetivos."
             android:textColor="@android:color/black"
@@ -96,13 +98,6 @@
             app:layout_constraintTop_toBottomOf="@id/textplanejamento2"
             android:layout_marginBottom="130dp"
             />
-
-
-
-
-
-
-
 
 
 

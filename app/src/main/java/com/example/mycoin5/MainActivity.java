@@ -1,7 +1,6 @@
 package com.example.mycoin5;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView botaoreceita;
     ImageView botaoreserva;
     ImageView botaodespesa;
-
     TextView txtdireitos;
 
 
@@ -23,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+        setContentView(R.layout.activity_main);
 
         btnConceitos = findViewById(R.id.btnConceitos);
         botaoreceita = findViewById(R.id.botaoreceita);

@@ -5,26 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
-        tools:context=".TelaPrincipal">
+        tools:context=".TelaPrincipal"
+        style="@style/AppTheme"
+        >
 
         <ImageView
             android:id="@+id/textcontentlogo"
+            style="@style/boxcontent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/boxcontent"
-            android:textColor="@color/white"
             android:layout_margin="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintVertical_bias="0.473" />
 
         <ImageView
             android:id="@+id/logo"
@@ -75,14 +79,14 @@
 
         <ImageView
             android:id="@+id/btnConceitos"
-            android:layout_height="80dp"
             android:layout_width="80dp"
+            android:layout_height="80dp"
             android:background="@drawable/conceitos"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtdireitos"
             app:layout_constraintTop_toBottomOf="@id/textmain3"
-            android:layout_marginBottom="20dp"
             />
 
         <TextView
@@ -128,7 +132,6 @@
             app:layout_constraintTop_toBottomOf="@id/botaoreserva"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="10dp"
             />
 
         <TextView
@@ -150,7 +153,6 @@
             android:id="@+id/txtdireitos"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginBottom="10dp"
             android:orientation="horizontal"
             android:text="Créditos"
             android:textColor="@color/cinzabotao"
@@ -159,7 +161,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TextSizeCheck"/>
+            app:layout_constraintTop_toBottomOf="@id/textmain4"
+            tools:ignore="TextSizeCheck"
+
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

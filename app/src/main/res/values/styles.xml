@@ -58,21 +58,8 @@
         <item name="android:background">@drawable/boxcontent</item>
     </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#FFFFFF</item>
+    </style>
 
 </resources>

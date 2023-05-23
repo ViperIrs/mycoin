@@ -8,10 +8,12 @@
     android:background="@drawable/background"
     tools:context=".TelaOrcamento2">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
 
         <ImageView
             android:id="@+id/imgorcamento"
@@ -25,7 +27,7 @@
             />
 
         <TextView
-            android:id="@+id/titleDespesaFixa"
+            android:id="@+id/titleOrcamento"
             android:layout_width="360dp"
             android:layout_height="40dp"
             android:background="@drawable/titulotxt"
@@ -37,45 +39,50 @@
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imgorcamento"/>
+            app:layout_constraintTop_toBottomOf="@id/imgorcamento"
+            />
 
         <ImageView
-            android:id="@+id/cardview"
+            android:id="@+id/cardviewOrcamento"
             android:layout_width="360dp"
             android:layout_height="230dp"
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
+            app:layout_constraintTop_toBottomOf="@id/titleOrcamento"
+            />
 
         <TextView
-            android:id="@+id/textreceita"
+            android:id="@+id/txtorcamento"
             android:layout_width="350dp"
-            android:layout_height="120dp"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginBottom="70dp"
             android:text="Organizar o orçamento doméstico pode ajudar sua família a juntar dinheiro e realizar sonhos!"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview"
-            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa" />
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/cardviewOrcamento"
+            app:layout_constraintStart_toStartOf="@id/cardviewOrcamento"
+            app:layout_constraintTop_toBottomOf="@id/titleOrcamento"
+            />
 
         <TextView
-            android:id="@+id/textreceita2"
+            android:id="@+id/txtorcamento2"
             android:layout_width="350dp"
-            android:layout_height="160dp"
-            android:layout_marginBottom="4dp"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginBottom="-5dp"
             android:text="Mudar os hábitos é essencial para alcançar objetivos.  No dia a dia familiar, é comum bagunçar o orçamento. Não saber exatamente quanto ganham, quanto e no que gastaram. Organizar tudo isso faz toda a diferença.   "
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/cardview"
-            app:layout_constraintEnd_toEndOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview" />
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/txtorcamento"
+            app:layout_constraintEnd_toEndOf="@id/cardviewOrcamento"
+            app:layout_constraintStart_toStartOf="@id/cardviewOrcamento"
+            />
 
         <TextView
             android:id="@+id/titleorçamentos2"
@@ -88,97 +95,101 @@
             android:gravity="center"
             android:background="@drawable/titulotxt"
             android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@id/cardview"
+            app:layout_constraintTop_toBottomOf="@id/cardviewOrcamento"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
         <ImageView
-            android:id="@+id/cardview2"
+            android:id="@+id/cardvieworcamento2"
             android:layout_width="360dp"
-            android:layout_height="440dp"
+            android:layout_height="470dp"
             android:background="@drawable/cardview"
             android:layout_marginBottom="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleorçamentos2"/>
+            app:layout_constraintTop_toBottomOf="@id/titleorçamentos2"
+            />
+
 
         <TextView
-            android:id="@+id/textorcamento"
+            android:id="@+id/txtorcamento3"
             android:layout_width="350dp"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginBottom="-5dp"
             android:text="Orçamento doméstico é um método de planejamento e organização financeira que analisa todas as receitas (dinheiro que entra) e despesas (dinheiro que é gasto) de uma família."
             android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintTop_toBottomOf="@id/titleorçamentos2"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
+            app:layout_constraintTop_toBottomOf="@+id/titleorçamentos2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
         <TextView
-            android:id="@+id/textorcamento2"
+            android:id="@+id/txtorcamento4"
             android:layout_width="350dp"
-            android:layout_height="85dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Isso pode ser feito através de ferramentas de controle, como planilhas ou aplicativos de controle de finanças. Ou ainda o velho caderno."
+            android:layout_marginBottom="-5dp"
             android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:text="Isso pode ser feito através de ferramentas de controle, como planilhas ou aplicativos de controle de finanças. Ou ainda o velho caderno."
+            android:textSize="15sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintTop_toBottomOf="@id/textorcamento"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
+            app:layout_constraintTop_toBottomOf="@+id/txtorcamento3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
+
         <TextView
-            android:id="@+id/textorcamento3"
+            android:id="@+id/txtorcamento5"
             android:layout_width="350dp"
-            android:layout_height="85dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginBottom="-5dp"
             android:text="Com o orçamento doméstico é possível analisar no que a família está gastando, o que pode ser cortado e o que é essencial."
             android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintTop_toBottomOf="@id/textorcamento2"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
+            app:layout_constraintTop_toBottomOf="@+id/txtorcamento4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
         <TextView
-            android:id="@+id/textorcamento4"
+            android:id="@+id/txtorcamento6"
             android:layout_width="350dp"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginBottom="-5dp"
             android:text="Também é possível ter mais segurança financeira, criar uma reserva de emergência e começar a investir."
             android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintTop_toBottomOf="@id/textorcamento3"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
+            app:layout_constraintTop_toBottomOf="@+id/txtorcamento5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
         <TextView
-            android:id="@+id/textorcamento5"
+            android:id="@+id/txtorcamento7"
             android:layout_width="350dp"
-            android:layout_height="84dp"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginBottom="-5dp"
             android:text="Um orçamento doméstico bem-feito, traz a tranquilidade financeira que a família precisa, além de proporcionar conforto no futuro."
             android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintTop_toBottomOf="@id/textorcamento4"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
+            app:layout_constraintTop_toBottomOf="@+id/txtorcamento6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
         <TextView
@@ -187,20 +198,18 @@
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="15dp"
             android:onClick="TelaConceitos"
             android:text="PASSOS DE UM ORÇAMENTO"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardview2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardvieworcamento2"
             app:layout_constraintBottom_toBottomOf="parent"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
