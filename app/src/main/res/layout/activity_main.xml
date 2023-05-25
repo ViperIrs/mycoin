@@ -25,10 +25,9 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.473" />
+            />
 
         <ImageView
             android:id="@+id/logo"
@@ -46,9 +45,11 @@
             android:layout_height="80dp"
             android:layout_width="80dp"
             android:background="@drawable/bank"
-            app:layout_constraintTop_toBottomOf="@id/logo"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtdireitos"
+            app:layout_constraintTop_toBottomOf="@id/textmain4"
             />
 
         <ImageView
@@ -82,11 +83,9 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/conceitos"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/txtdireitos"
-            app:layout_constraintTop_toBottomOf="@id/textmain3"
+            app:layout_constraintEnd_toEndOf="parent"
             />
 
         <TextView
@@ -161,7 +160,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textmain4"
+            app:layout_constraintTop_toBottomOf="@id/textmain3"
             tools:ignore="TextSizeCheck"
 
             />
