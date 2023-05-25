@@ -6,179 +6,325 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".TelaCreditos">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation ="vertical">
 
         <TextView
-            android:id="@+id/txtdesenvolvimento1"
-            android:layout_width="380dp"
+            android:id="@+id/titledesenvolvimento"
+            android:layout_width="360dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:background="@drawable/titulotxt"
-            android:text="Desenvolvimento: "
+            android:gravity="center"
+            android:text="DESENVOLVIMENTO DE SOFTWARE"
             android:textColor="@color/white"
             android:textSize="20dp"
-            android:gravity="center"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
             />
-
-        <TextView
-            android:id="@+id/cardview4"
-            android:layout_width="380dp"
-            android:layout_height="130dp"
-            android:background="@drawable/cardview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento1"
-            android:layout_marginBottom="10dp"
-             />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="340dp"
-            android:layout_height="130dp"
-            app:srcCompat="@drawable/iencia_da_omputacao"
-            android:layout_marginTop="-10dp"
-            app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento1"
-            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/cardDev"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titledesenvolvimento" />
 
         <TextView
-            android:id="@+id/txtdesenvolvimento"
-            android:layout_width="380dp"
+            android:id="@+id/textDesenv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professores colaboradores"
+            app:layout_constraintStart_toStartOf="@id/cardDev"
+            app:layout_constraintTop_toBottomOf="@id/titledesenvolvimento"
+            app:layout_constraintEnd_toEndOf="@id/cardDev"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textDesenv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prof. Me. Fred Aparecido Matano"
+            app:layout_constraintStart_toStartOf="@id/cardDev"
+            app:layout_constraintTop_toBottomOf="@id/textDesenv"
+            app:layout_constraintEnd_toEndOf="@id/cardDev"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textDesenv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prof. Dr. Elvio Gilberto da Silva."
+            app:layout_constraintStart_toStartOf="@id/cardDev"
+            app:layout_constraintTop_toBottomOf="@id/textDesenv2"
+            app:layout_constraintEnd_toEndOf="@id/cardDev"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/titleInt"
+            android:layout_width="360dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:background="@drawable/titulotxt"
-            android:text="Desenvolvimento de Software"
+            android:gravity="center"
+            android:text="INTEGRANTES"
             android:textColor="@color/white"
             android:textSize="20dp"
-            android:gravity="center"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardview5"/>
+            app:layout_constraintTop_toBottomOf="@id/cardDev"
+            android:layout_marginTop="20dp"
+            />
 
-        <TextView
+        <ImageView
             android:id="@+id/cardview"
-            android:layout_width="380dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento" />
+            app:layout_constraintTop_toBottomOf="@id/titleInt" />
 
         <TextView
-            android:id="@+id/txtelvio"
-            android:layout_width="380dp"
-            android:layout_height="120dp"
-            android:padding="16dp"
-            android:text="- Nome do professor: Prof. Dr. Elvio Gilberto da
-Silva.
-
-
-
-
-                                                                             - Nome do professor colaborador: Prof. Me. Fred Aparecido Matano"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview"
-            app:layout_constraintTop_toTopOf="@id/cardview" />
-
-        <TextView
-            android:id="@+id/txtintegrantes"
-            android:layout_width="380dp"
+            android:id="@+id/titleApoio"
+            android:layout_width="360dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:background="@drawable/titulotxt"
-            android:text="Integrantes"
+            android:gravity="center"
+            android:text="APOIO"
             android:textColor="@color/white"
             android:textSize="20dp"
-            android:gravity="center"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview"
             android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardview"/>
-
-        <TextView
-            android:id="@+id/cardview2"
-            android:layout_width="380dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/cardview"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtintegrantes" />
-
-        <TextView
-            android:id="@+id/txtintegrantes2"
-            android:layout_width="380dp"
-            android:layout_height="120dp"
-            android:padding="16dp"
-            android:text="-Igor Ribeiro Scarlassara                                                 -Thiago Dalasta Camillo                                       -Thiago Vinícius de Souza Carlos                                       -Vitor Biazotto Rodrigues"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/cardview2"
-            app:layout_constraintStart_toStartOf="@id/cardview2"
-            app:layout_constraintTop_toTopOf="@id/cardview2" />
-
-        <TextView
-            android:id="@+id/txtApoio"
-            android:layout_width="380dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/titulotxt"
-            android:text="Apoio: "
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@id/imageView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
-
-        <TextView
-            android:id="@+id/cardview5"
-            android:layout_width="380dp"
-            android:layout_height="130dp"
-            android:background="@drawable/cardview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtApoio"
-            android:layout_marginBottom="10dp"
             />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="340dp"
-            android:layout_height="130dp"
-            app:srcCompat="@drawable/nova"
-            android:layout_marginTop="-10dp"
-            app:layout_constraintTop_toBottomOf="@id/txtApoio"
-            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/cardviewapoio"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleApoio" />
+
+        <TextView
+            android:id="@+id/titleDev"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/titulotxt"
+            android:gravity="center"
+            android:text="DESENVOLVIMENTO"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardviewapoio"
+            android:layout_marginTop="20dp"
             />
+
+        <ImageView
+            android:id="@+id/cardviewdev"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:background="@drawable/cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleDev"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
+
+
+<ImageView
+android:id="@+id/imageView2"
+android:layout_width="340dp"
+android:layout_height="130dp"
+app:srcCompat="@drawable/nova"
+android:layout_marginTop="-10dp"
+app:layout_constraintTop_toBottomOf="@id/txtApoio"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="340dp"
+android:layout_height="130dp"
+app:srcCompat="@drawable/iencia_da_omputacao"
+android:layout_marginTop="-10dp"
+app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento1"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="340dp"
+android:layout_height="130dp"
+app:srcCompat="@drawable/iencia_da_omputacao"
+android:layout_marginTop="-10dp"
+app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento1"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+    />
+<TextView
+android:id="@+id/txtdesenvolvimento1"
+android:layout_width="380dp"
+android:layout_height="40dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="25dp"
+android:background="@drawable/titulotxt"
+android:text="Desenvolvimento de software: "
+android:textColor="@color/white"
+android:textSize="20dp"
+android:gravity="center"
+android:textStyle="bold"
+android:layout_marginTop="20dp"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+    />
+
+<TextView
+android:id="@+id/cardview4"
+android:layout_width="380dp"
+android:layout_height="130dp"
+android:background="@drawable/cardview"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento1"
+android:layout_marginBottom="10dp"
+    />
+
+
+
+<TextView
+android:id="@+id/txtdesenvolvimento"
+android:layout_width="380dp"
+android:layout_height="40dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="25dp"
+android:background="@drawable/titulotxt"
+android:text="Desenvolvimento de Software"
+android:textColor="@color/white"
+android:textSize="20dp"
+android:gravity="center"
+android:textStyle="bold"
+android:layout_marginTop="20dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/cardview5"/>
+
+<TextView
+android:id="@+id/cardview"
+android:layout_width="380dp"
+android:layout_height="110dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="25dp"
+android:background="@drawable/cardview"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/txtdesenvolvimento" />
+
+
+
+<TextView
+android:id="@+id/txtintegrantes"
+android:layout_width="380dp"
+android:layout_height="40dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="25dp"
+android:background="@drawable/titulotxt"
+android:text="Integrantes"
+android:textColor="@color/white"
+android:textSize="20dp"
+android:gravity="center"
+android:textStyle="bold"
+android:layout_marginTop="20dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/cardview"/>
+
+<TextView
+android:id="@+id/cardview2"
+android:layout_width="380dp"
+android:layout_height="110dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="25dp"
+android:background="@drawable/cardview"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/txtintegrantes" />
+
+<TextView
+android:id="@+id/txtintegrantes2"
+android:layout_width="380dp"
+android:layout_height="120dp"
+android:padding="16dp"
+android:text="thiago"
+android:textColor="@android:color/black"
+android:textSize="15sp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="@id/cardview5"
+app:layout_constraintStart_toStartOf="@id/cardview5"
+app:layout_constraintTop_toTopOf="@id/cardview5" />
+
+<TextView
+android:id="@+id/txtApoio"
+android:layout_width="380dp"
+android:layout_height="40dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="25dp"
+android:background="@drawable/titulotxt"
+android:text="Apoio: "
+android:textColor="@color/white"
+android:textSize="20dp"
+android:gravity="center"
+android:textStyle="bold"
+android:layout_marginTop="30dp"
+app:layout_constraintTop_toBottomOf="@id/cardview4"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+    />
+
+<TextView
+android:id="@+id/cardview5"
+android:layout_width="380dp"
+android:layout_height="130dp"
+android:background="@drawable/cardview"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/txtApoio"
+android:layout_marginBottom="10dp"
+    />
