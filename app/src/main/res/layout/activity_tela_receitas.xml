@@ -97,99 +97,140 @@
             app:layout_constraintBottom_toBottomOf="@id/cardview" />
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="270dp"
-            android:layout_height="330dp"
-            android:layout_margin="20dp"
-            app:cardCornerRadius="31dp"
-            app:layout_constraintTop_toBottomOf="@id/cardview"
+        <TextView
+            android:id="@+id/titleExemplos"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/titulotxt"
+            android:gravity="center"
+            android:text="EXEMPLOS"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+        <ImageView
+            android:id="@+id/cardview2"
+            android:layout_width="360dp"
+            android:layout_height="300dp"
+            android:background="@drawable/cardview"
+            app:layout_constraintTop_toBottomOf="@id/titleExemplos"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            >
-            <LinearLayout
-                android:layout_width="270dp"
-                android:layout_height="330dp"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/titlecards1"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/titulotxt"
-                    android:gravity="center"
-                    android:text="EXEMPLOS"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    />
+            android:layout_marginBottom="20dp"
+             />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- rendimento de aplicações e investimentos em geral; "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- salário ou retirada mensal; "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    />
+        <TextView
+            android:id="@+id/txtexemplos1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- rendimento de aplicações e investimentos em geral"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/titleExemplos"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- comercialização de produtos para pessoas e/ou empresas; comercialização de produtos para pessoas e/ou empresas; "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    />
+        <TextView
+            android:id="@+id/txtexemplos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- salário ou retirada mensal"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos1"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="- prestação de serviços para terceiros; "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    />
+        <TextView
+            android:id="@+id/txtexemplos3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- comercialização de produtos para pessoas"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos2"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="- rendimentos de poupança; "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="- receitas de aluguel;  "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="- outras receitas;  "
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtexemplos4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- prestação de serviços para terceiros"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos3"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
+
+        <TextView
+            android:id="@+id/txtexemplos5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- rendimentos de poupança"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos4"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
+
+        <TextView
+            android:id="@+id/txtexemplos6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- receitas de aluguel"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos5"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
+
+        <TextView
+            android:id="@+id/txtexemplos7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- outras receitas"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtexemplos6"
+            app:layout_constraintStart_toStartOf="@id/cardview2"
+            />
 
 
 
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
