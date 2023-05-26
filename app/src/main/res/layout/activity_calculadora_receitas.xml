@@ -94,10 +94,10 @@
         android:gravity="center"
         android:textSize="18sp"
         android:layout_marginBottom="40dp"
-        android:layout_marginLeft="230dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"/>
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="@id/viewreceitas2"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"
+        />
 
 
     <ImageView
