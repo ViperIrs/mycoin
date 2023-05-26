@@ -101,7 +101,61 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleInt"/>
 
+        <TextView
+            android:id="@+id/textnomes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Thiago Dalasta Camillo"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/titleInt"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
+            android:layout_marginTop="10dp"
+            />
 
+        <TextView
+            android:id="@+id/textnomes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Igor Ribeiro Scarlassara"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/textnomes1"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textnomes3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Vitor Rodrigues Biazotto"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/textnomes2"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textnomes4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Thiago Vinicius de Souza Carlos"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/textnomes3"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
+            android:layout_marginTop="10dp"
+            />
 
         <TextView
             android:id="@+id/titleApoio"
@@ -127,6 +181,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleApoio" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/nova"
+            app:layout_constraintTop_toBottomOf="@id/titleApoio"
+            app:layout_constraintStart_toStartOf="@id/cardviewapoio"
+            app:layout_constraintEnd_toEndOf="@id/cardviewapoio"/>
 
         <TextView
             android:id="@+id/titleDev"
@@ -155,6 +217,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="20dp"
             />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iencia_da_omputacao"
+            app:layout_constraintTop_toBottomOf="@id/titleDev"
+            app:layout_constraintStart_toStartOf="@id/cardviewdev"
+            app:layout_constraintEnd_toEndOf="@id/cardviewdev"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
