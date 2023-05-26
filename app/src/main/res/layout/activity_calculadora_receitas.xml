@@ -31,13 +31,23 @@
 
 
     <TextView
-        android:id="@+id/TextViewReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 0.000"
+        android:text="R$"
         android:textColor="@color/green"
         android:textSize="40sp"
         android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="@id/viewreceita"
+        app:layout_constraintStart_toStartOf="@id/viewreceita"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceita"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewReceita"
+        android:text="0.00"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:layout_marginLeft="70dp"
         app:layout_constraintTop_toTopOf="@id/viewreceita"
         app:layout_constraintStart_toStartOf="@id/viewreceita"
         app:layout_constraintBottom_toBottomOf="@id/viewreceita"/>
@@ -94,10 +104,10 @@
         android:gravity="center"
         android:textSize="18sp"
         android:layout_marginBottom="40dp"
-        android:layout_marginRight="5dp"
-        app:layout_constraintEnd_toEndOf="@id/viewreceitas2"
-        app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"
-        />
+        android:layout_marginLeft="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"/>
 
 
     <ImageView
