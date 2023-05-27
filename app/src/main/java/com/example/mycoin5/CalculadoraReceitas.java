@@ -23,7 +23,7 @@ public class CalculadoraReceitas extends AppCompatActivity {
         setContentView(R.layout.activity_calculadora_receitas);
 
         EditTextReceitas = findViewById(R.id.EditTextReceitas);
-        buttonAdicionar = findViewById(R.id.buttonAdicionar);
+        //buttonAdicionar = findViewById(R.id.buttonAdicionar);
         TextViewReceita = findViewById(R.id.TextViewReceita);
 
         buttonAdicionar.setOnClickListener(new View.OnClickListener() {

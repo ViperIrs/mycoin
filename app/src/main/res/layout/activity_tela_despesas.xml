@@ -29,21 +29,22 @@
             android:layout_height="40dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/titulotxt"
             android:text="O QUE SÃO DESPESAS?"
             android:textColor="@color/white"
             android:textSize="20dp"
-            android:gravity="center"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imageView"/>
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
 
-        <TextView
+        <ImageView
             android:id="@+id/cardview"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:adjustViewBounds="true"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/cardview"
@@ -53,17 +54,23 @@
 
         <TextView
             android:id="@+id/txtdespesa"
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:padding="16dp"
-            android:text="As despesas podem ser encaradas como todo tipo de pagamento ou uso de recursos financeiros necessários para manutenção do patrimônio ou atividade em questão, um conceito também aplicável ao planejamento financeiro em diferentes posições.   Para o orçamento doméstico, despesas são os gastos obrigatórios para manter sua qualidade de vida, e estão classificadas em FIXAS e VARIÁVEIS. "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="As despesas podem ser encaradas como todo tipo de pagamento ou uso de recursos financeiros necessários para manutenção do patrimônio ou atividade em questão, um conceito também aplicável ao planejamento financeiro em diferentes posições. Para o orçamento doméstico, despesas são os gastos obrigatórios para manter sua qualidade de vida, e estão classificadas em FIXAS e VARIÁVEIS."
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             android:gravity="center"
-            app:layout_constraintTop_toTopOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview"
-            app:layout_constraintEnd_toEndOf="@id/cardview"/>
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/cardview"
+            />
+
 
         <TextView
             android:id="@+id/btnDespesasFixas"
@@ -80,7 +87,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtdespesa" />
+            app:layout_constraintTop_toBottomOf="@+id/cardview" />
 
         <TextView
             android:id="@+id/btnDespesasVariaveis"

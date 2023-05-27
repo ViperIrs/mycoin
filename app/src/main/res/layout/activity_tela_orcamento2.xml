@@ -190,6 +190,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtorcamento6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/cardvieworcamento2"
             />
 
         <TextView

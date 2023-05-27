@@ -41,7 +41,7 @@
         <ImageView
             android:id="@+id/cardview"
             android:layout_width="360dp"
-            android:layout_height="450dp"
+            android:layout_height="500dp"
             android:background="@drawable/cardview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,35 +51,32 @@
             android:id="@+id/textreceita"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="320dp"
             android:gravity="center"
             android:padding="16dp"
             android:text="A receita é todo tipo de dinheiro recebido em troca de produtos ou serviços, ou seja, é o dinheiro, ou salário, ou retirada que você ganha para executar uma determinada função, atividade ou comercializar algum produto para outra pessoa, seja ela física ou jurídica."
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/cardview"
+            app:layout_constraintTop_toBottomOf="@id/titleDespesaFixa"
+            app:layout_constraintBottom_toTopOf="@id/textreceita2"
             app:layout_constraintEnd_toEndOf="@id/cardview"
             app:layout_constraintStart_toStartOf="@id/cardview"
             />
-
 
         <TextView
             android:id="@+id/textreceita2"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:padding="16dp"
-            android:layout_marginBottom="170dp"
             android:text="No entanto, nem toda entrada de dinheiro é classificada como receita. A aquisição de empréstimos e consignados é um exemplo claro de entrada, mas que não foi obtida em troca da prestação de serviços ou venda de produtos. Além disso, será preciso pagar com juros o valor emprestado, o que torna essa ação um exemplo de despesa.  "
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@id/textreceita3"
             app:layout_constraintEnd_toEndOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview"
-            app:layout_constraintBottom_toBottomOf="@id/cardview"
-
-            />
+            app:layout_constraintStart_toStartOf="@id/cardview" />
 
         <TextView
             android:id="@+id/textreceita3"
@@ -94,7 +91,8 @@
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="@id/cardview"
             app:layout_constraintStart_toStartOf="@id/cardview"
-            app:layout_constraintBottom_toBottomOf="@id/cardview" />
+            app:layout_constraintBottom_toBottomOf="@id/cardview"
+            />
 
 
         <TextView
@@ -117,11 +115,11 @@
             android:layout_width="360dp"
             android:layout_height="300dp"
             android:background="@drawable/cardview"
-            app:layout_constraintTop_toBottomOf="@id/titleExemplos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="20dp"
-             />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleExemplos" />
 
         <TextView
             android:id="@+id/txtexemplos1"
