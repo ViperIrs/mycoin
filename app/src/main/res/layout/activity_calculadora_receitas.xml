@@ -106,10 +106,9 @@
         android:layout_height="340dp"
         android:layout_margin="20dp"
         style="@style/boxcontent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewreceitas2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewreceitas2"
         />
 
     <TextView
@@ -130,14 +129,14 @@
     <ScrollView
         android:layout_width="320dp"
         android:layout_height="270dp"
-        android:layout_marginBottom="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleanteriores"
+        app:layout_constraintBottom_toBottomOf="@id/viewreceitas3"
+        app:layout_constraintTop_toTopOf="@id/viewreceitas3"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/layoutReceita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

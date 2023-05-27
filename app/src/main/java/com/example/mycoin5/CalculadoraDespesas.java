@@ -13,6 +13,7 @@ public class CalculadoraDespesas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_calculadora_despesas);
 
         edittext = findViewById(R.id.EditTextDespesas);
