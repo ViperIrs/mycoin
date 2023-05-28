@@ -58,7 +58,7 @@ public class CalculadoraDespesas extends AppCompatActivity {
         escondertextview();
         SharedPreferences sharedPreferences = getSharedPreferences("Salvamento", Context.MODE_PRIVATE);
 
-        valorAtual = sharedPreferences.getFloat("Receita", 0.00f);
+        valorAtual = sharedPreferences.getFloat("Despesa", 0.00f);
         TextViewDespesa.setText(String.valueOf(valorAtual));
         ButtonAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +70,7 @@ public class CalculadoraDespesas extends AppCompatActivity {
 
                 despesa.add(valor1);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putFloat("Receita", valorAtual + valor1);
+                editor.putFloat("Despesa", valorAtual + valor1);
                 editor.apply();
 
                 historico();
