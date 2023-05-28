@@ -32,16 +32,30 @@
 
 
     <TextView
+        android:id="@+id/TextViewDespesa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="R$"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/viewdespesas"
+        app:layout_constraintStart_toStartOf="@id/viewdespesas"
+        app:layout_constraintTop_toTopOf="@id/viewdespesas"
+         />
+
+    <TextView
         android:id="@+id/TextViewDespesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 0.000"
+        android:layout_marginStart="70dp"
+        android:text="0.00"
         android:textColor="@color/red"
         android:textSize="40sp"
-        android:layout_marginLeft="15dp"
-        app:layout_constraintTop_toTopOf="@id/viewdespesas"
+        app:layout_constraintBottom_toBottomOf="@id/viewdespesas"
         app:layout_constraintStart_toStartOf="@id/viewdespesas"
-        app:layout_constraintBottom_toBottomOf="@id/viewdespesas"/>
+        app:layout_constraintTop_toTopOf="@id/viewdespesas"
+        />
 
     <ImageView
         android:id="@+id/viewdespesas2"
@@ -86,19 +100,19 @@
         app:layout_constraintBottom_toBottomOf="@id/viewdespesas2"/>
 
     <TextView
+        android:id="@+id/ButtonAdicionar"
         android:layout_width="130dp"
         android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/edit_text2"
+        android:gravity="center"
         android:text="ADICIONAR"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:gravity="center"
         android:textSize="18sp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginRight="5dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/viewdespesas2"
-        app:layout_constraintEnd_toEndOf="@id/viewdespesas2"
-        />
+        app:layout_constraintEnd_toEndOf="@id/viewdespesas2" />
 
 
     <ImageView
@@ -145,6 +159,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/TextView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -154,6 +169,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -163,6 +179,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -172,6 +189,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -181,6 +199,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -190,6 +209,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -199,6 +219,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -208,6 +229,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -217,6 +239,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

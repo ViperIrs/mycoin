@@ -95,6 +95,7 @@
         app:layout_constraintBottom_toBottomOf="@id/viewreceitas2"/>
 
     <TextView
+        android:id="@+id/buttonAdicionar"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_text2"
@@ -152,6 +153,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/TextView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 1"
@@ -161,6 +163,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 2"
@@ -169,6 +172,7 @@
                 android:layout_margin="10dp"
                 />
             <TextView
+                android:id="@+id/TextView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 3"
@@ -178,6 +182,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 4"
@@ -187,6 +192,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 5"
@@ -196,6 +202,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 6"
@@ -205,6 +212,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 7"
@@ -214,6 +222,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 8"
@@ -223,6 +232,7 @@
                 />
 
             <TextView
+                android:id="@+id/TextView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView 9"

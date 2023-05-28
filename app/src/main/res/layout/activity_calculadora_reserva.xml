@@ -29,12 +29,24 @@
 
 
     <TextView
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:text="R$"
+        android:textColor="@color/bankcolor"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewreserva"
+        app:layout_constraintStart_toStartOf="@id/viewreserva"
+        app:layout_constraintTop_toTopOf="@id/viewreserva" />
+    <TextView
         android:id="@+id/TextViewDin"
         android:layout_width="230dp"
         android:layout_height="50dp"
         android:layout_marginLeft="15dp"
-        android:text="R$ 0.000"
+        android:text="0.00"
         android:textColor="@color/bankcolor"
+        android:layout_marginStart="75dp"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/viewreserva"
