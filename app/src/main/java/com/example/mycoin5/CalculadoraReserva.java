@@ -19,16 +19,15 @@ public class CalculadoraReserva extends AppCompatActivity {
         setContentView(R.layout.activity_calculadora_reserva);
         SharedPreferences sharedPreferences = getSharedPreferences("Salvamento", Context.MODE_PRIVATE);
         TextView TextViewDin = findViewById(R.id.TextViewDin);
+        TextView TextViewDespesa = findViewById(R.id.TextViewDespesa);
+        TextView TextViewReceita = findViewById(R.id.TextViewReceita);
 
         float receita = sharedPreferences.getFloat("Receita", 0.00f);
         float despesa = sharedPreferences.getFloat("Despesa", 0.00f);
         float Total = receita - despesa;
         TextViewDin.setText(String.valueOf(Total));
-
-
-
-
-
+        TextViewDespesa.setText(String.valueOf(despesa));
+        TextViewReceita.setText(String.valueOf(receita));
     }
 
 }
