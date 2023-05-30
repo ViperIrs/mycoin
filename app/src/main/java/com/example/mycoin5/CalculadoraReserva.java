@@ -22,12 +22,12 @@ public class CalculadoraReserva extends AppCompatActivity {
         TextView TextViewDespesa = findViewById(R.id.TextViewDespesa);
         TextView TextViewReceita = findViewById(R.id.TextViewReceita);
 
-        float receita = sharedPreferences.getFloat("Receita", 0.00f);
-        float despesa = sharedPreferences.getFloat("Despesa", 0.00f);
-        float Total = receita - despesa;
+        float receitas = sharedPreferences.getFloat("Receita", 0.00f);
+        float despesas = sharedPreferences.getFloat("Despesa", 0.00f);
+        float Total = receitas - despesas;
         TextViewDin.setText(String.valueOf(Total));
-        TextViewDespesa.setText(String.valueOf(despesa));
-        TextViewReceita.setText(String.valueOf(receita));
+        TextViewDespesa.setText(String.valueOf(despesas));
+        TextViewReceita.setText(String.valueOf(receitas));
     }
 
 }

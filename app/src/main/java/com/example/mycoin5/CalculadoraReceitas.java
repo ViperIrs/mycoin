@@ -58,7 +58,6 @@ public class CalculadoraReceitas extends AppCompatActivity {
         escondertextview();
         SharedPreferences sharedPreferences = getSharedPreferences("Salvamento", Context.MODE_PRIVATE);
 
-
         valorAtual = sharedPreferences.getFloat("Receita", 0.00f);
         TextViewReceita.setText(String.valueOf(valorAtual));
 
@@ -66,17 +65,22 @@ public class CalculadoraReceitas extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 float valor1 = Float.parseFloat(EditTextReceitas.getText().toString());
+
+
                 valorAtual += valor1;
+
                 TextViewReceita.setText(String.valueOf(valorAtual));
 
                 receitas.add(valor1);
+
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putFloat("Receita", valorAtual + valor1);
+                editor.putFloat("Receita", valorAtual);
                 editor.apply();
 
                 historico();
             }
         });
+
     }
 
     private void historico(){
