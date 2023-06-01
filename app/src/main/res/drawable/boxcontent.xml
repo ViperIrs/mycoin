@@ -6,5 +6,5 @@
         android:endColor="@color/azulmarinho"/>
     <corners
         android:radius="30dp"/>
-    <stroke android:color="@color/cinza" android:width="2dp"/>
+    <stroke android:color="@color/cinza_mais_claro" android:width="2dp"/>
 </shape>
