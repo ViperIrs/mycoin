@@ -5,6 +5,6 @@
         android:centerColor="@color/azulmarinho"
         android:endColor="@color/azulmarinho"/>
     <corners
-
         android:radius="30dp"/>
+    <stroke android:color="@color/cinza" android:width="2dp"/>
 </shape>
