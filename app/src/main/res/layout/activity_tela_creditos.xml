@@ -41,7 +41,7 @@
             android:id="@+id/textDesenv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Professores colaboradores"
+            android:text="Professores"
             app:layout_constraintStart_toStartOf="@id/cardDev"
             app:layout_constraintTop_toBottomOf="@id/titledesenvolvimento"
             app:layout_constraintEnd_toEndOf="@id/cardDev"
@@ -54,7 +54,7 @@
             android:id="@+id/textDesenv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prof. Me. Fred Aparecido Matano"
+            android:text="Prof. Dr. Elvio Gilberto da Silva."
             app:layout_constraintStart_toStartOf="@id/cardDev"
             app:layout_constraintTop_toBottomOf="@id/textDesenv"
             app:layout_constraintEnd_toEndOf="@id/cardDev"
@@ -67,7 +67,7 @@
             android:id="@+id/textDesenv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prof. Dr. Elvio Gilberto da Silva."
+            android:text="Prof. Me.Fred Aparecido Matano"
             app:layout_constraintStart_toStartOf="@id/cardDev"
             app:layout_constraintTop_toBottomOf="@id/textDesenv2"
             app:layout_constraintEnd_toEndOf="@id/cardDev"
@@ -75,6 +75,19 @@
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textDesenv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Professor Colaborador)"
+            app:layout_constraintStart_toStartOf="@id/cardDev"
+            app:layout_constraintTop_toBottomOf="@id/textDesenv3"
+            app:layout_constraintEnd_toEndOf="@id/cardDev"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
 
         <TextView
             android:id="@+id/titleInt"
@@ -107,7 +120,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:text="Thiago Dalasta Camillo"
+            android:text="Igor Ribeiro Scarlassara"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/titleInt"
             app:layout_constraintStart_toStartOf="@id/cardview"
@@ -121,7 +134,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:text="Igor Ribeiro Scarlassara"
+            android:text="Thiago Dalasta Camillo"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/textnomes1"
             app:layout_constraintStart_toStartOf="@id/cardview"
@@ -135,7 +148,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:text="Vitor Biazotto Rodrigues"
+            android:text="Thiago Vinicius de Souza Carlos"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/textnomes2"
             app:layout_constraintStart_toStartOf="@id/cardview"
@@ -149,7 +162,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:text="Thiago Vinicius de Souza Carlos"
+            android:text="Vitor Biazotto Rodrigues"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/textnomes3"
             app:layout_constraintStart_toStartOf="@id/cardview"
@@ -163,7 +176,7 @@
             android:layout_height="40dp"
             android:background="@drawable/titulotxt"
             android:gravity="center"
-            android:text="APOIO"
+            android:text="DESENVOLVIMENTO"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -185,7 +198,7 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="150dp"
-            android:src="@drawable/nova"
+            android:src="@drawable/iencia_da_omputacao"
             app:layout_constraintTop_toBottomOf="@id/titleApoio"
             app:layout_constraintStart_toStartOf="@id/cardviewapoio"
             app:layout_constraintEnd_toEndOf="@id/cardviewapoio"/>
@@ -196,7 +209,7 @@
             android:layout_height="40dp"
             android:background="@drawable/titulotxt"
             android:gravity="center"
-            android:text="DESENVOLVIMENTO"
+            android:text="APOIO"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -221,7 +234,7 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="150dp"
-            android:src="@drawable/iencia_da_omputacao"
+            android:src="@drawable/nova"
             app:layout_constraintTop_toBottomOf="@id/titleDev"
             app:layout_constraintStart_toStartOf="@id/cardviewdev"
             app:layout_constraintEnd_toEndOf="@id/cardviewdev"/>
